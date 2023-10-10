@@ -1,5 +1,5 @@
 
-**Running cd** <br /> <br />
+## **Running cd** <br /> <br />
 
 1. **No arguments** <br />
 
@@ -37,12 +37,12 @@ Using the absolute path to the file en-us.txt as an argument resulted in an erro
 <br />
 
 The output is an error because the path that was input did not lead to a directory, but instead a file, so cd did not work as intended.
-<br />
+<br /> <br />
 
 
 
 
-**Running ls** <br />
+## **Running ls** <br /> <br />
 
 1. **No arguments** <br />
 
@@ -55,11 +55,13 @@ Since no arguments were given in this command, the path defaulted to the current
 No error occurred. <br />
 
 
-2. **Path to directory as
+2. **Path to directory as an argument** <br />
 
-3.
+![Image](ls-path-directory) <br />
 
-cat
+4.
+
+## **Running cat** <br /> <br />
 
 1. **No arguments**
 2. **Path to directory as an arugment**
