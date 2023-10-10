@@ -79,7 +79,7 @@ This is an error because no list was printed. <br /> <br />
 
 1. **No arguments** <br />
 
-![Image](cat-no-argumen.png)<br />
+![Image](cat-no-argument.png)<br />
 
 **Working directory at the time of running the command:** /home <br />
 
