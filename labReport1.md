@@ -29,7 +29,15 @@ The output is not an error, the code is running as intended. <br />
 
 3. **Path to file as an argument** <br />
 
-Working directory at the time of running the command:  <br />
+![Image](cd-path-file.png) <br />
+
+Working directory at the time of running the command: /home <br />
+
+Using the absolute path to the file en-us.txt as an argument resulted in an error and no changes made to the working directory. This is because the argument for cd is meant to be a path to a directory.
+<br />
+
+The output is an error because the path that was input did not lead to a directory, but instead a file, so cd did not work as intended.
+<br />
 
 
 
