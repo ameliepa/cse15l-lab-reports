@@ -22,7 +22,7 @@ The output is an error because cd is meant to change the directory of the termin
 
 Using lecture1 as an arugument with the cd command resulted in the path of the directory changing. I ran pwd after running the lines of code above, and the working directory was no longer /home but instead /home/lecture1. This is also indicated in the command prompt changing from [user@sahara ~]$ to [user@sahara ~/lecture1]. <br /> 
 
-The output is not an error, the code is running as intended. <br /> 
+The output is not an error; the code is running as intended. <br /> 
 
 
 
@@ -73,7 +73,7 @@ No error occurred. <br />
 
 The purpose of ls is to list the files and folders of the path given. Since the path given led to a file instead of directory, no list could be printed. Instead, the path given was printed. <br />
 
-This is an error because no list was printed. <br /> <br />
+The output of this command is an error because no list was printed. <br /> <br />
 
 **Running cat** <br /> <br />
 
