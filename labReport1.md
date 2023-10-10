@@ -94,9 +94,9 @@ The cat command is supposed to print the contents of a file. Since no file was g
 
 **Working directory at the time of running the command:** /home <br />
 
-<br />
+Running cat with a directory as an argument did not print the contents of the directory, but instead a statement describing lecture1. <br />
 
-Error <br />
+This result is an error because no file contents were printed. <br />
 
 3. **Path to file as an argument** <br />
 
@@ -104,6 +104,6 @@ Error <br />
 
 **Working directory at the time of running the command:** /home <br />
 
-Running cat with a path to a file as an argument resulted in the content of that file being printed successfully. <br />
+Running cat with a path to a file as an argument resulted in the contents of that file being printed successfully. <br />
 
 No error occured.
