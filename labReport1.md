@@ -42,10 +42,21 @@ The output is an error because the path that was input did not lead to a directo
 
 
 
-**Running ls**
+**Running ls** <br />
 
-1.
-2.
+1. **No arguments** <br />
+
+![Image](ls-no-argument)<br />
+
+Working directory at the time of running the command: /home <br />
+
+Since no arguments were given in this command, the path defaulted to the current working directory, which was /home. Running this code printed the titles of the file lab1 and the folder lecture1 which are both located within /home. <br />
+
+No error occurred. <br />
+
+
+2. **Path to directory as
+
 3.
 
 cat
