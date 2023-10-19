@@ -7,9 +7,9 @@
 
 **Working directory at the time of running the command:** /home <br />
 
-The command cd is intended to change the directory of the terminal with a given path. Since no path was given as an argument, the path did not change. <br />
+The command cd is intended to change the directory of the terminal with a given path. Running cd with no arguments results in the directory resetting back to /home. Since the directory's path already leads there, nothing changed. However, if the current working directory was something other than /home, such as /home/lecture1/messages, running cd with no arguments would change the directory to /home. <br />
 
-The output is an error because cd is meant to change the directory of the terminal, but no change occurred. <br />
+No error occurred. <br />
 
 
 
@@ -73,7 +73,7 @@ No error occurred. <br />
 
 The purpose of ls is to list the files and folders of the path given. Since the path given led to a file instead of directory, no list could be printed. Instead, the path given was printed. <br />
 
-The output of this command is an error because no list was printed. <br /> <br />
+No error occurred. <br /> <br />
 
 **Running cat** <br /> <br />
 
@@ -83,9 +83,9 @@ The output of this command is an error because no list was printed. <br /> <br /
 
 **Working directory at the time of running the command:** /home <br />
 
-Running cat with no argument resulted in nothing being printed. The command prompt also disappeared, forcing me to create another terminal as I could not figure out how to fix this otherwise. <br />
+Running cat with no argument resulted in nothing being printed. The command prompt also disappeared, forcing me to use Command-C to exit the command. <br />
 
-The cat command is supposed to print the contents of a file. Since no file was given as an argument, an error occurred, removing the command prompt. <br />
+No error occurred. <br />
 
 
 2. **Path to directory as an arugment** <br />
