@@ -2,6 +2,7 @@
 
 **Part 1** <br />
 - show code for StringServer
+![Image]stringserver.png
 
 1) Screenshot of /add-message
 - Which methods in your code are called?
