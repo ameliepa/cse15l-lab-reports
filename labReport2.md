@@ -5,8 +5,10 @@ Code of StringServer.java
 ![Image](stringserver1.png) <br />
 
 1) **Screenshot of using /add-message** <br />
+
 ![Image](add-message1.png) <br />
 **Methods called in handleRequest upon using /add-messages?s=Hello:** <br />
+<br />
 - .getPath()
 - .equals()
 - .format()
@@ -15,14 +17,31 @@ Code of StringServer.java
 - .split()
 - .toString()
 - .length
+  
+<br />
 
+**Relevant arguments to the above methods and their relevant values:**
 
-- **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
-Relevant arguments to the above methods:
-the URI url <br />
+<br />
 
-- **How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why**
-Values changed: count changes, str changes <br />
+- .getPath()
+- .equals()
+- .format()
+- .contains()
+- .getQuery
+- .split()
+- .toString()
+
+<br />
+
+**How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+
+<br />
+
+- int count is changed. It increases by 1 when a valid query is found after /add-message.
+- String str is changed. A String version of the count value, a ". ", and a String value from the query is added to str. 
+
+<br />
 
 2) **Screenshot of using /add-message** <br />
 ![Image](add-message2.png) <br />
