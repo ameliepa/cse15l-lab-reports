@@ -2,7 +2,7 @@
 
 **Part 1** <br />
 Code of StringServer.java <br />
-![Image](stringserver1.png) <br />
+![Image](stringserver1.2.png) <br />
 ![Image](stringserver2.png) <br />
 
 1) **Screenshot of using /add-message?s=Hello!** <br />
