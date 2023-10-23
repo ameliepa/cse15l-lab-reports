@@ -7,7 +7,9 @@ Code of StringServer.java <br />
 
 1) **Screenshot of using /add-message?s=Hello!** <br />
 ![Image](add-message1.png) <br />
-**Methods called in handleRequest upon using /add-messages?s=Hello:** <br /> <br />
+
+**Methods called in handleRequest upon using /add-messages?s=Hello:** 
+<br /> <br />
 - .getPath()
 - .equals()
 - .format()
@@ -17,7 +19,9 @@ Code of StringServer.java <br />
 - .toString()
 - .length
 <br />
+
 **Relevant arguments to those methods and the values of any relevant fields of the class:** <br /> <br />
+
 - .equals("/") and .equals("s")
 - .format("%s",str)
 - .contains("/add-message")
@@ -27,6 +31,7 @@ Code of StringServer.java <br />
 - String str = ""
 - Additionally, when handleRequest is called, its argument is URI url and its value is http://ieng6-202.ucsd.edu:1989/add-message?s=Hello!
 <br />
+
 **Values of relevant fields of the class change that are changed:** <br /> <br />
 - String str is changed. A String version of the count value, a ". ", a String value from the query, and "\n" is added to str.
 - int count is changed. It increases by 1 after str is altered.
@@ -45,7 +50,9 @@ Code of StringServer.java <br />
 - .toString()
 - .length
 <br />
-**Relevant arguments to those methods and the values of any relevant fields of the class** <br /> <br />
+
+**Relevant arguments to those methods and the values of any relevant fields of the class:**
+<br /> <br />
 - .equals("/") and .equals("s")
 - .format("%s",str)
 - .contains("/add-message")
@@ -55,7 +62,9 @@ Code of StringServer.java <br />
 - String str = "1. Hello!\n"
 - Additionally, when handleRequest is called, its argument is URI url and its value is http://ieng6-202.ucsd.edu:1989/add-message?s=How%20are%20you?
 <br />
-**Values of relevant fields of the class change that are changed:** <br /> <br />
+
+**Values of relevant fields of the class change that are changed:**
+<br /> <br />
 - String str is changed. A String version of the count value, a ". ", a String value from the query, and "\n" is added to str.
 - int count is changed. It increases by 1 after str is altered.
 <br />
