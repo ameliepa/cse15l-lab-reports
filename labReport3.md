@@ -69,9 +69,32 @@ Many commands like these have pretty sophisticated behavior possible – it can 
 grep -c
 2 examples
 ```
+[cs15lfa23kb@ieng6-201]:technical:148$ grep -c "cell" ./biomed/*.txt
+./biomed/1468-6708-3-1.txt:4
+./biomed/1468-6708-3-10.txt:0
+./biomed/1468-6708-3-3.txt:1
+./biomed/1468-6708-3-4.txt:0
+./biomed/1468-6708-3-7.txt:3
+./biomed/1471-2091-2-10.txt:58
+./biomed/1471-2091-2-11.txt:153
+(etc.)
 ```
+
 ```
+[cs15lfa23kb@ieng6-201]:technical:148$ grep -c "California" ./911report/*.txt
+./911report/chapter-1.txt:0
+./911report/chapter-10.txt:0
+./911report/chapter-11.txt:1
+./911report/chapter-12.txt:0
+./911report/chapter-13.1.txt:0
+./911report/chapter-13.2.txt:0
+./911report/chapter-13.3.txt:0
+(etc.)
 ```
+What it's doing and why it's useful: 
+
+
+
 
 grep -h
 2 ex
