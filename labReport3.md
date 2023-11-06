@@ -10,7 +10,7 @@
   }
 ```
 
-**An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)**
+**An input that doesn’t induce a failure:**
 ```
 @Test 
 	public void testReverseInPlace() {
@@ -147,12 +147,26 @@ The command grep -l only shows the file names that contain the pattern given. Th
 
 **grep -n**
 ```
+[cs15lfa23kb@ieng6-201]:technical:165$ grep -n  "imagery" ./plos/*.txt
+./plos/journal.pbio.0020439.txt:179:        (Mathematical imagery, such as a tetrahedron for applied mathematics and a matrix for
+./plos/journal.pbio.0030136.txt:11:        graphic production, he turned popular imagery into a high form of art and an exploration of
+./plos/journal.pbio.0030136.txt:16:        basic inspiration of these icons is advertising imagery and comic book frames. Throughout
+./plos/journal.pbio.0030136.txt:17:        his artistic life, he drew his imagery from the detritus of printed material—gum wrapper
+./plos/journal.pbio.0030136.txt:109:        One comes away from the exhibit with a sense of the power of raw imagery that one may not
+./plos/pmed.0020007.txt:65:          the use of imagery, and the method of loci (visualizing items to be remembered in a
 ```
 
-
 ```
+[cs15lfa23kb@ieng6-201]:technical:167$ grep -n "heterozygous" ./biomed/*.txt
+./biomed/1471-2105-4-28.txt:410:          disease is dependenton inheriting a heterozygous genotype
+./biomed/1471-2105-4-28.txt:412:          Aa ) from one SNPor a heterozygous
+./biomed/1471-2156-2-12.txt:250:            heterozygous for a leptin receptor mutation ( 
+./biomed/1471-2156-2-12.txt:428:            homozygous or heterozygous for a leptin receptor
+./biomed/1471-2156-2-18.txt:70:        we analyzed mice heterozygous for a null allele of 
+./biomed/1471-2156-2-18.txt:351:          heterozygous mice had clinically detectable ocular
+./biomed/1471-2156-2-8.txt:110:        found to have lost the Pvu II site, and the heterozygous
+(etc.)
 ```
-what it does and why useful
-The grep -n command shows all the lines that 
+The grep -n command shows all the lines that contain the given pattern and also their line number. If you want to see the line a pattern is in, as well as know which line it is, this is a helpful command. 
 
 All command line options for grep and information about them were found on https://www.geeksforgeeks.org/grep-command-in-unixlinux/
