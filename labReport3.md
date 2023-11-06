@@ -54,17 +54,13 @@ Previously, reverseInPlace would loop through the array, replacing each element 
 
 To fix this, I only looped through half of the array instead of the entirety of it. This allowed me to swap elements with each other instead replacing them each individually, as shown in the body of the for loop. As the loop runs, the element at index i is held temporarily in the hold variable so that its value is not lost when the reverse value is put into the array at index i. Then, the old value in hold replaces the reverse value in index arr.length - i - 1. This correctly swaps the values.
 
+<br />
+
 ### **Part 2 - Researching Commands**
 
 **The Grep Command**
 
-Online, find 4 interesting command-line options or alternate ways to use the command you chose. 
-
-For each of those options, give 2 examples of using it on files and directories from ./technical. 
-Show each example as a **code block** that shows the command and its output, and write a sentence or two about what it’s doing and why it’s useful.
-
-That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. 
-Many commands like these have pretty sophisticated behavior possible – it can take years to be exposed to and learn all of the possible tricks and inner workings.
+<br />
 
 **grep -c**
 
@@ -93,6 +89,7 @@ Many commands like these have pretty sophisticated behavior possible – it can 
 ```
 The command grep -c finds the numbers of lines that contains the pattern in the quotation marks. It's useful for finding the frequency of certain words or phrases.
 
+<br />
 
 **grep -h**
 ```
@@ -119,7 +116,7 @@ The command grep -c finds the numbers of lines that contains the pattern in the 
 ```
 The grep -h command shows the lines within the files that contain the pattern given. This command would be useful if one wanted to see the contexts in which particular words or phrases are used within a folder, or even a specific file.
 
-
+<br />
 
 **grep -l**
 ```
@@ -143,7 +140,7 @@ The grep -h command shows the lines within the files that contain the pattern gi
 
 The command grep -l only shows the file names that contain the pattern given. This is useful if you only want the file names and not the text inside them.
 
-
+<br />
 
 **grep -n**
 ```
@@ -168,5 +165,7 @@ The command grep -l only shows the file names that contain the pattern given. Th
 (etc.)
 ```
 The grep -n command shows all the lines that contain the given pattern and also their line number. If you want to see the line a pattern is in, as well as know which line it is, this is a helpful command. 
+
+<br />
 
 All command line options for grep and information about them were found on https://www.geeksforgeeks.org/grep-command-in-unixlinux/
