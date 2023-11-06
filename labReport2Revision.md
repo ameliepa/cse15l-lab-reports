@@ -116,10 +116,12 @@ class StringServer {
 <br />
 The path to the _private_ key for your SSH key for logging into ieng6 (on your computer or on the home directory of the lab computer): <br />
 ![Image](ssh-private.png) <br />
+```/home/linux/ieng6/cs15lfa23/cs15lfa23kb/.ssh/id_rsa``` <br />
 The path to the _public_ key for your SSH key for logging into ieng6 (within your account on ieng6): <br />
 ![Image](ssh-public.png) <br />
+```/home/linux/ieng6/cs15lfa23/cs15lfa23kb/.ssh/id_rsa.pub``` <br />
 Logging into ieng6 with course-specific account without being asked for a password: <br />
 ![Image](terminal-interaction.png)
 
 **Part 3** <br />
-From our labs, I learned how to ssh into a remote server. I also learned how to make a create a new server and run it, as shown in this week's lab. 
+From our labs, I learned how to ssh into a remote server. I also learned how to make a create a new server and run it, as shown in this week's lab. It's a lot more simple than I realized. Running a server requires two different java files. One of those files reads the url and determines what it shown on the server. The other file handles more complicated requests.
