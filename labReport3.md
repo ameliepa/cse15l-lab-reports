@@ -66,8 +66,8 @@ Show each example as a **code block** that shows the command and its output, and
 That makes 8 total examples, all focused on a single command. There should be two examples each for four different command-line options. 
 Many commands like these have pretty sophisticated behavior possible – it can take years to be exposed to and learn all of the possible tricks and inner workings.
 
-grep -c
-2 examples
+**grep -c**
+
 ```
 [cs15lfa23kb@ieng6-201]:technical:148$ grep -c "cell" ./biomed/*.txt
 ./biomed/1468-6708-3-1.txt:4
@@ -91,18 +91,68 @@ grep -c
 ./911report/chapter-13.3.txt:0
 (etc.)
 ```
-What it's doing and why it's useful: 
+The command grep -c finds the numbers of lines that contains the pattern in the quotation marks. It's useful for finding the frequency of certain words or phrases.
+
+
+**grep -h**
+```
+[cs15lfa23kb@ieng6-201]:technical:151$ grep -h "extracellular" ./biomed/*.txt
+          interstitial fluid volume, and extracellular fluid volume
+          may reside in integrin α chain extracellular or
+          The CD98 heavy chain contains two extracellular
+        found to inhibit the growth of extracellular bacteria such
+        modification of the extracellular matrix and are involved
+        surrounding extracellular environment.
+          extracellular matrix.
+```
+
+
+```
+[cs15lfa23kb@ieng6-201]:technical:149$ grep -h "California" ./911report/*.txt
+                California went on the watch for his like.
+                chemistry, from California State University, Sacramento. Sufaat did not start on the
+                reasons for sending Hazmi and Mihdhar to California do not seem especially
+                explanation for the California destination. The possibility that the two hijackers
+                addresses-one in the United States ("possibly in California") and one in South
+                California." Intelligence report, interrogation of KSM, June 15, 2004.
+                acclimate the hijackers to the United States, particularly San Diego, California."
+```
+The grep -h command shows the lines within the files that contain the pattern given. This command would be useful if one wanted to see the contexts in which particular words or phrases are used within a folder, or even a specific file.
 
 
 
+**grep -l**
+```
+[cs15lfa23kb@ieng6-201]:technical:157$ grep -l "Supreme Court" ./government/Media/*.txt 
+./government/Media/Aid_Gets_7_Million.txt
+./government/Media/Annual_Fee.txt
+./government/Media/Assuring_Underprivileged.txt
+./government/Media/BergenCountyRecord.txt
+./government/Media/Bridging_legal_aid_gap.txt
+./government/Media/BusinessWire2.txt
+./government/Media/Campaign_Pays.txt
+./government/Media/Firm_to_the_Poor_Needs_Help.txt
+./government/Media/FortWorthStarTelegram.txt
+```
+```
+[cs15lfa23kb@ieng6-201]:technical:161$ grep -l "imagery" ./plos/*.txt   
+./plos/journal.pbio.0020439.txt
+./plos/journal.pbio.0030136.txt
+./plos/pmed.0020007.txt
+```
 
-grep -h
-2 ex
+The command grep -l only shows the file names that contain the pattern given. This is useful if you only want the file names and not the text inside them.
 
-grep -l
-2 ex
 
-grep -n
-2 ex
 
-All command line options for grep were found on https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+**grep -n**
+```
+```
+
+
+```
+```
+what it does and why useful
+The grep -n command shows all the lines that 
+
+All command line options for grep and information about them were found on https://www.geeksforgeeks.org/grep-command-in-unixlinux/
