@@ -25,4 +25,4 @@ Used a shortcut to use the a previous command, `bash test.sh`.
 11. Committing and pushing the resulting change to my Github account (you can pick any commit message!) <br />
 ![Image](7-committing.png)
 **Keys used:** g, i, t, \<space>, a, d, d, \<space>, L, i, s, t, E, x, a, m, p, l, e, s, ., j, a, v, a, \<enter>, g, i, t, \<space>, c, o, m, m, i, t, /<space>, -, m, \<space>, ", c, h, a, n, g, e, d, \<space>, i, n, d, e, x, 1, \<space>, t, o, \<space>, i, n, d, e, x, 2, ", \<space>, g, i, t, \<space>, p, u, s, h \<enter>
-git add stages the file ListExamples.java. git commit creates a commit locally for the file I just staged. The -m option allows me to add a commit message: "changed index1 to index2". Then, git push copies the changes to the remote server, GitHub.
+I used git add stages the file ListExamples.java. git commit creates a commit locally for the file I just staged. The -m option allows me to add a commit message: "changed index1 to index2". Then, git push copies the changes to the remote server, GitHub.
