@@ -24,8 +24,8 @@ Used a shortcut to use the a previous command, `bash test.sh`.
 
 11. Committing and pushing the resulting change to my Github account (you can pick any commit message!) <br />
 Screenshot
-**Keys used:** g, i, t, \<space>, a, d, d, \<space>, L, i, s, t, E, x, a, m, p, l, e, s, ., j, a, v, a, \<enter>, g, i, t, \<space>, c, o, m, m, i, t, /<space>, -, m, \<space>, ", c, h, a, n, g, e, d, \<space>, i, n, d, e, x, 1, \<space>, t, o, \<space>, i, n, d, e, x, 2, ", \<space>, g, i, t, \<space>, p, u, s, h \<enter
+**Keys used:** g, i, t, \<space>, a, d, d, \<space>, L, i, s, t, E, x, a, m, p, l, e, s, ., j, a, v, a, \<enter>, g, i, t, \<space>, c, o, m, m, i, t, /<space>, -, m, \<space>, ", c, h, a, n, g, e, d, \<space>, i, n, d, e, x, 1, \<space>, t, o, \<space>, i, n, d, e, x, 2, ", \<space>, g, i, t, \<space>, p, u, s, h \<enter>
 
-add
+git add stages the 
 commit
 push
