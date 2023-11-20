@@ -103,8 +103,7 @@ In this use of grep -c, I found the number of times "California" was mentioned i
         surrounding extracellular environment.
           extracellular matrix.
 ```
-
-
+The grep -h command shows the lines within the files that contain the pattern given. This command would be useful if one wanted to see the contexts in which particular words or phrases are used within a folder, or even a specific file. I used grep -h to find all lines in text files with the word "extracellular" within them using the directory ./biomed/*.txt. 
 ```
 [cs15lfa23kb@ieng6-201]:technical:149$ grep -h "California" ./911report/*.txt
                 California went on the watch for his like.
@@ -115,7 +114,7 @@ In this use of grep -c, I found the number of times "California" was mentioned i
                 California." Intelligence report, interrogation of KSM, June 15, 2004.
                 acclimate the hijackers to the United States, particularly San Diego, California."
 ```
-The grep -h command shows the lines within the files that contain the pattern given. This command would be useful if one wanted to see the contexts in which particular words or phrases are used within a folder, or even a specific file.
+In the example above, I used grep -h to find all mentions of "California" in all text files within the 911report folder and print the full line they were on.
 
 <br />
 
@@ -132,6 +131,8 @@ The grep -h command shows the lines within the files that contain the pattern gi
 ./government/Media/Firm_to_the_Poor_Needs_Help.txt
 ./government/Media/FortWorthStarTelegram.txt
 ```
+The command grep -l only shows the file names that contain the pattern given. This is useful if you only want the file names and not the text inside them. Above, I used grep -l to list all paths to text files in the directory ./government/Media/*.txt containing the phrase "Supreme Court".
+
 ```
 [cs15lfa23kb@ieng6-201]:technical:161$ grep -l "imagery" ./plos/*.txt   
 ./plos/journal.pbio.0020439.txt
@@ -139,7 +140,7 @@ The grep -h command shows the lines within the files that contain the pattern gi
 ./plos/pmed.0020007.txt
 ```
 
-The command grep -l only shows the file names that contain the pattern given. This is useful if you only want the file names and not the text inside them.
+I also used grep -l to list all text files mentioning the word "imagery" with the directory ./plos/*.txt.
 
 <br />
 
@@ -153,6 +154,7 @@ The command grep -l only shows the file names that contain the pattern given. Th
 ./plos/journal.pbio.0030136.txt:109:        One comes away from the exhibit with a sense of the power of raw imagery that one may not
 ./plos/pmed.0020007.txt:65:          the use of imagery, and the method of loci (visualizing items to be remembered in a
 ```
+The grep -n command shows all the lines that contain the given pattern and also their line number. If you want to see the line a pattern is in, as well as know which line it is, this is a helpful command. In the above example, I used it to print all lines containing the word "imagery" in the text files within the plos folder. 
 
 ```
 [cs15lfa23kb@ieng6-201]:technical:167$ grep -n "heterozygous" ./biomed/*.txt
@@ -165,7 +167,7 @@ The command grep -l only shows the file names that contain the pattern given. Th
 ./biomed/1471-2156-2-8.txt:110:        found to have lost the Pvu II site, and the heterozygous
 (etc.)
 ```
-The grep -n command shows all the lines that contain the given pattern and also their line number. If you want to see the line a pattern is in, as well as know which line it is, this is a helpful command. 
+In this example, I used the grep -n command to show all lines, as well as their corresponding file path, containing "heterozygous" in the ./biomed/*.txt directory. 
 
 <br />
 
