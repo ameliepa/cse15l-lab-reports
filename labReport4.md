@@ -10,20 +10,20 @@ Used the git clone command to clone my repository onto my remote account. \<comm
 - **Running the tests, demonstrating that they fail** <br />
 ![Image](7-runtests.png)
 **Keys used:** c, d, \<space>, l, a, b, 7, \<enter>, b, a, s, h, \<space>, t, e, s, t, ., s, h, \<enter> <br /> <br />
-Used cd command to change directory to lab 7, allowing me to then run the bash tests. <br />
+I used the cd command to change directory to lab7, allowing me to then run the bash tests. <br />
 
 - **Editing the code file to fix the failing test** <br />
 Vim command:
 ![Image](7-vimcommand.png)
 Using vim:
 ![Image](7-insidevim.png)
-**Keys used:** v, i, m, \<space>, L, i, s, t, E, x, a, m, p, l, e, s, ., j, a, v, a, \<enter>, scroll down and click on 1, x, i, 2, <esc>, :, w, q, \<enter> <br /> <br />
-Used vim to edit the file from the command line. After enter was first pressed, the terminal was in vim. Pressing x after I clicked on 1 resulted in 1 being removed. Pressing i put me in insert mode where I was able to press 2, and use \<esc> to exit insert mode. The command :wq allowed me to save my changes (the usage of the w) and quit vim (the usage of the q). <br />
+**Keys used:** v, i, m, \<space>, L, i, s, t, E, x, a, m, p, l, e, s, ., j, a, v, a, \<enter>, x, i, 2, <esc>, :, w, q, \<enter> <br /> <br />
+I used vim to edit the file from the command line. After \<enter> was first pressed, the terminal was in vim. Pressing x after I clicked on 1 resulted in 1 being removed. Pressing i put me in insert mode where I was able to press 2, and use \<esc> to exit insert mode. The command :wq allowed me to save my changes (the usage of the w) and quit vim (the usage of the q). <br />
 
 - **Running the tests, demonstrating that they now succeed** <br />
 ![Image](7-runagain.png)
 **Keys used:** \<up arrow>,  \<up arrow>, \<enter> <br /> <br />
-Used a shortcut to use the a previous command, `bash test.sh`.<br />
+I used the \<up arrow> shortcut to access and use a previous command, `bash test.sh`.<br />
 
 - **Committing and pushing the resulting change to my Github account** <br />
 ![Image](7-committing.png)
