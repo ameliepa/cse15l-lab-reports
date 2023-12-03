@@ -17,8 +17,8 @@ Vim command:
 ![Image](7-vimcommand.png)
 Using vim:
 ![Image](7-insidevim.png)
-**Keys used:** <br /> v, i, m, `<space>`, L, i, s, t, E, x, a, m, p, l, e, s, ., j, a, v, a, `<enter>` <br /> x, i, 2, `<esc>`, :, w, q, `<enter>` <br /> <br />
-I used vim to edit the file from the command line. After `<enter>` was first pressed, the terminal was in vim. Pressing x after I clicked on 1 resulted in 1 being removed. Pressing i put me in insert mode where I was able to press 2, and use `<esc>` to exit insert mode. The command :wq allowed me to save my changes (the usage of the w) and quit vim (the usage of the q). <br />
+**Keys used:** <br /> v, i, m, `<space>`, L, `<tab>`, ., j, a, v, a, `<enter>` <br /> x, i, 2, `<esc>`, :, w, q, `<enter>` <br /> <br />
+I used vim to edit the file from the command line. After `<enter>` was first pressed, the terminal was in vim. I clicked on 1 and then pressed x, resulting in 1 being removed. Normally, when in vim, you are unable to click on a character and you must use keys to get to your desired location within the file. However, I think due to the extension I used, I was able to click on the spot I wanted my cursor to be. Pressing i put me in insert mode where I was able to press 2, and use `<esc>` to exit insert mode. The command :wq allowed me to save my changes (the usage of the w) and quit vim (the usage of the q). <br />
 
 - **Running the tests, demonstrating that they now succeed** <br />
 ![Image](7-runagain.png)
