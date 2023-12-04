@@ -1,29 +1,94 @@
 ## Part 1 – Debugging Scenario
-Design a debugging scenario, and write your report as a conversation on EdStem. It should have:
 
-- The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. (Don’t actually make the post! Just write the content that would go in such a post)
-
-**Student**
+**Student:**
 Hello, I am trying to write a program that finds the largest number in an array, but the wrong number is getting returned and I haven't been able to figure out what is wrong with my code. Could someone please point me to where the issue may be?
-- Screenshot showing a symptom 
-- guess at the bug / some sense of what teh failure inducing input is
+![Image](bug5.png) 
 
-- A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)
+**TA:**
+You should take a closer look at the parameters of your for loop. What are each of them doing?
 
-**TA**
-Could you please include a screenshot of your code so as to better assist you? 
+**Student:**
+I see, thank you! I got rid of the -1 and now the for loop checks all elements of the array, including the last index. 
+![image](bugfix.png)
 
-- Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
-- 
-At the end, all the information needed about the setup including:
-- The file & directory structure needed
-- The contents of each file before fixing the bug
-- The full command line (or lines) you ran to trigger the bug (like, the JUnit results in the terminal)
-- A description of what to edit to fix the bug
-- 
-You should actually set up and run the scenario from your screenshots. It should involve at least a Java file and a bash script. Describing the bug should involve reading some output at the terminal resulting from running one or more commands. Design an error that produces more interesting output than a single message about a syntax or unbound identifier error – showcase some interesting wrong behavior! Feel free to set this up by cloning and breaking some existing code like the grading script or code from class, or by designing something of your own from scratch, etc.
+**Setup Information:**
+- The file & directory structure needed: ![image](lr5directory.png)
+- The contents of each file before fixing the bug: <br /> <br />
+Number.java: 
+```
+import java.util.Arrays;
+
+public class Number {
+    public int findLargestNum(int [] arr) {
+        int largest = arr[0];
+	      for (int i = 0; i < arr.length-1; i++) {
+		      if ( arr[i] > largest ) {
+            largest = arr[i];
+		    }
+	    }
+	  return largest;
+    }
+}
+```
+TestNumber.java:
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.util.*;
+import java.util.ArrayList;
+
+
+public class TestNumber {
+	@Test
+	public void testLargest() {
+        Number numObj = new Number();
+        int[] nums = new int []{5, 4, 3, 2, 1};
+        int result = numObj.findLargestNum(nums);
+        assertEquals(5, result);
+        }
+
+        @Test
+        public void testLargestAgain() {
+        Number numObj = new Number();
+        int[] num2 = new int []{11, 33, 55, 77};
+        int result2 = numObj.findLargestNum(num2);
+        assertEquals(77, result2);
+        }
+}
+
+```
+run.sh: 
+```
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+
+if [ $? -eq 0 ]; then
+    java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestNumber
+else
+    echo "Compilation failed"
+fi
+```
+- The full command line ran to trigger the bug:
+```
+ameliepadilla@Amelies-MacBook-Air cse15l-labreport5 % bash run.sh
+JUnit version 4.13.2
+.E.
+Time: 0.003
+There was 1 failure:
+1) testLargestAgain(TestNumber)
+java.lang.AssertionError: expected:<77> but was:<55>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:647)
+        at org.junit.Assert.assertEquals(Assert.java:633)
+        at TestNumber.testLargestAgain(TestNumber.java:21)
+
+FAILURES!!!
+Tests run: 2,  Failures: 1
+```
+- What to edit to fix the bug: The for loop within Number.java needed to be changed. `i < arr.length-1` needed to be changed to `i < arr.length` so that the loop would check all elements of the array instead of skipping the last element.
+
+
 
 ## Part 2 – Reflection
-In a couple of sentences, describe something you learned from your lab experience in the second half of this quarter that you didn’t know before. It could be a technical topic we addressed specifically, something cool you found out on your own building on labs, something you learned from a tutor or classmate, and so on. It doesn’t have to be specifically related to a lab writeup, we just want to hear about cool things you learned!
 
-Using vim to edit from the command line, learning how to write a bash file
+In the second half of this quarter, I have learned how to use vim, a way of editing files remotely from a command line. I have also learned how to create a bash file that can run tests for you. I now know some basic bash syntax, like using $ for variables, and how to write if/else statements (if, then, else, fi). 
