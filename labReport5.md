@@ -12,7 +12,8 @@ I see, thank you! I got rid of the -1 and now the for loop checks all elements o
 ![image](bugfix.png)
 
 **Setup Information:**
-- The file & directory structure needed: ![image](lr5directory.png)
+- The file & directory structure needed: <br />
+![image](lr5directory.png)
 - The contents of each file before fixing the bug: <br /> <br />
 Number.java: 
 ```
